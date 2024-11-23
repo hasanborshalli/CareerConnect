@@ -7,59 +7,110 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# CareerConnect
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Overview
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**CareerConnect** is a comprehensive job portal designed to connect hiring companies with job seekers efficiently. The platform offers tools for both companies and job seekers to meet their respective needs, ensuring a user-friendly experience for all parties involved.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Key Features
 
-## Learning Laravel
+-   **For Companies**:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+    -   Sign up and log in to the portal.
+    -   Post job listings with detailed responsibilities and requirements.
+    -   View and manage job applications.
+    -   Navigate through a jobs page and a companies page.
+    -   Edit or delete posted jobs.
+    -   Maintain and update their profile.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+-   **For Job Seekers**:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+    -   Sign up and log in to access opportunities.
+    -   Search for jobs by title or category.
+    -   Search for companies.
+    -   Apply for jobs and manage applications.
+    -   View and update their profile.
 
-## Laravel Sponsors
+-   **Homepage**:
+    -   Displays job categories as interactive cards.
+    -   Features a carousel showcasing highlighted job postings.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## Technologies Used
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+The following tools and technologies were utilized in the development of CareerConnect:
 
-## Contributing
+-   **Development Environment**: Visual Studio Code (VSCode)
+-   **Design**: Canva
+-   **Database Management**: phpMyAdmin, MySQL
+-   **Programming Languages**: HTML, CSS, JavaScript, PHP
+-   **Framework**: Laravel
+-   **Templating Engine**: Blade
+-   **Search Engine**: Scout Driver
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## Installation Instructions
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+To set up and run the CareerConnect project locally, follow these steps:
 
-## Security Vulnerabilities
+### Prerequisites
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Ensure the following are installed on your system:
+
+-   [PHP 8.1](https://www.php.net/)
+-   [Composer](https://getcomposer.org/)
+-   [MySQL](https://www.mysql.com/)
+-   [Laravel 11](https://laravel.com/)
+
+### Steps
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/hasanborshalli/careerconnect.git
+    cd careerconnect
+    ```
+2. **Install dependencies**:
+
+composer install
+composer require laravel/scout
+composer require algolia/algoliasearch-client-php
+
+3. **Set environment variables**:
+
+    Duplicate the .env.example file and rename it to .env.
+    Configure your database credentials in the .env file:
+
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=job
+    DB_USERNAME=root
+    DB_PASSWORD=
+
+4. **Generate application key**:
+
+php artisan key:generate
+
+Run migrations and seed the database:
+
+php artisan migrate --seed
+
+5. **Start the development server**:
+
+    php artisan serve
+
+    Open the application in your browser at http://localhost:8000.
+
+## Contact Information
+
+For inquiries or feedback, feel free to reach out:
+
+    Email: hasanborshalli@gmail.com
+    GitHub: https://github.com/hasanborshalli
+    LinkedIn: https://www.linkedin.com/in/hasan-borshalli-b98464198/
 
 ## License
 
