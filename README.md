@@ -74,33 +74,41 @@ Ensure the following are installed on your system:
     ```
 2. **Install dependencies**:
 
+```bash
 composer install
 composer require laravel/scout
 composer require algolia/algoliasearch-client-php
+```
 
 3. **Set environment variables**:
 
     Duplicate the .env.example file and rename it to .env.
     Configure your database credentials in the .env file:
 
+```bash
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
     DB_DATABASE=job
     DB_USERNAME=root
     DB_PASSWORD=
+```
 
 4. **Generate application key**:
 
+```bash
 php artisan key:generate
 
 Run migrations and seed the database:
 
 php artisan migrate --seed
+```
 
 5. **Start the development server**:
 
+```bash
     php artisan serve
+```
 
     Open the application in your browser at http://localhost:8000.
 
