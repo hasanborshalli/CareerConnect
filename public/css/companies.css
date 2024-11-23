@@ -1,0 +1,127 @@
+h2 {
+    font-size: 1.8em;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border-color: #1e3a8a;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #1e3a8a;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-button:hover {
+    background-color: #17408b;
+}
+/* Companies List */
+.companies-list {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.company-item {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.company-item img {
+    width: 120px;
+    object-fit: cover;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.company-info h3 {
+    font-size: 1.3em;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.company-info p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Links Styling */
+.company-info a {
+    text-decoration: none;
+    color: #1e3a8a;
+}
+
+.company-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .company-item {
+        width: 90%;
+    }
+
+    .company-info h3 {
+        font-size: 1.1em;
+    }
+
+    .company-info p {
+        font-size: 0.9em;
+    }
+    .search-input {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .company-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-info h3 {
+        font-size: 1em;
+    }
+
+    .company-info p {
+        font-size: 0.8em;
+    }
+    .search-input {
+        width: 200px;
+    }
+}

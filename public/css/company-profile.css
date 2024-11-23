@@ -1,0 +1,58 @@
+.company-profile {
+    padding: 30px;
+    color: #1e3a8a;
+}
+.company-profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.company-profile a {
+    color: #1e3a8a;
+}
+.company-profile-info img {
+    width: 12%;
+    height: 100px;
+    min-width: 100px;
+}
+.company-about p {
+    margin-top: 0;
+    margin-left: 30px;
+}
+.company-about h2,
+.company-profile-ul h2 {
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+.company-profile-ul ul {
+    margin-top: 0;
+}
+.company-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.company-links img {
+    margin-top: 30px;
+    width: 30px;
+}
+.edit button {
+    background-color: transparent;
+    border: none;
+}
+.edit img {
+    width: 30px;
+}
+.aboutme {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 500px) {
+    .company-profile h2 {
+        font-size: 15px;
+    }
+    .company-profile p,
+    .company-profile-ul {
+        font-size: 12px;
+    }
+}

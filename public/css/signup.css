@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1e3a8a;
+}
+.step1,
+.centered-form {
+    width: 60%;
+    text-align: center;
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+p,
+label {
+    font-family: "Poppins", sans-serif;
+}
+.choices {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.choice {
+    min-height: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #cdd6dd;
+    cursor: pointer;
+}
+.choice img {
+    width: 80%;
+    min-width: 100px;
+}
+@media (max-width: 700px) {
+    .choices {
+        flex-direction: column;
+    }
+}
+.input-default {
+    width: 50%;
+    min-width: 260px;
+    height: 30px;
+    border-radius: 25px;
+    border: 2px solid #1a3e8a;
+    background-color: transparent;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    color: #1a3e8a;
+}
+.centered-form select {
+    height: 40px;
+    width: 52%;
+}
+textarea {
+    height: 100px !important;
+    border-radius: 0 !important;
+}
+.two-inputs {
+    width: 50%;
+    min-width: 260px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.small-input {
+    width: 50%;
+    min-width: 110px;
+    height: 30px;
+    border-radius: 25px;
+    border: 2px solid #1a3e8a;
+    background-color: transparent;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    color: #1a3e8a;
+}
+.signup-next {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: #1a3e8a;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    color: #f3f4f6;
+    cursor: pointer;
+}
+.post-btn {
+    width: 50%;
+    min-width: 260px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #1a3e8a;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    color: #f3f4f6;
+    cursor: pointer;
+}
+.box {
+    height: 50px;
+}
+input[type="file"] {
+    display: none;
+}
+
+.file-input {
+    display: inline-block;
+    cursor: pointer;
+    text-align: left !important;
+    color: rgba(30, 58, 138, 0.5);
+    font-size: 15px;
+}
+.skills-input-container,
+.special-input-container,
+.responsibility-input-container,
+.requirement-input-container {
+    width: 50%;
+    min-width: 260px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    border: 2px solid #1a3e8a;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: transparent;
+    width: 100%;
+    min-width: 260px;
+    justify-content: center;
+}
+
+.skill-tag,
+.special-tag,
+.responsibility-tag,
+.requirement-tag {
+    display: flex;
+    align-items: center;
+    background-color: #cdd6dd;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.skill-tag span,
+.special-tag span,
+.responsibility-tag span,
+.requirement-tag span {
+    margin-right: 5px;
+}
+.skill-tags,
+.special-tags,
+.responsibility-tags,
+.requirement-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill-tag .remove-btn,
+.special-tag .remove-btn,
+.responsibility-tag .remove-btn,
+.requirement-tag .remove-btn {
+    cursor: pointer;
+    color: #ff6347;
+    margin-left: 5px;
+}
+
+.skill-input,
+.special-input,
+.responsibility-input,
+.requirement-input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-family: "Poppins", sans-serif;
+    color: #1e3a8a;
+    background-color: transparent;
+}
+
+.suggestions {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 300px;
+    max-height: 100px;
+    overflow-y: auto;
+    z-index: 1;
+    margin-top: 5px;
+}
+
+.suggestions li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions li:hover {
+    background-color: #f1f1f1;
+}
+.view-photo {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+@media (max-width: 500px) {
+    .input-default,
+    .post-btn,
+    .input-wrapper,
+    .skills-input-container,
+    .skill-input,
+    .special-input-container,
+    .special-input,
+    .responsibility-input-container,
+    .responsibility-input,
+    .requirement-input-container,
+    .requirement-input {
+        min-width: 200px;
+    }
+    .two-inputs input[type="text"] {
+        min-width: 100px;
+    }
+}

@@ -1,0 +1,31 @@
+.filters {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.categories-select,
+.job-search {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    background-color: transparent;
+    border: 2px solid #1e3a8a;
+    border-radius: 15px;
+    color: #1e3a8a;
+}
+.categories-select option {
+    background-color: #f3f4f6;
+}
+.job-list {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 3%;
+}

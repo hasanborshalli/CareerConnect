@@ -1,0 +1,57 @@
+.job-card {
+    height: 520px;
+    width: 28%;
+    min-width: 280px;
+    background-color: #f3f4f6;
+    color: #1e3a8a;
+    padding: 15px;
+    border-radius: 25px;
+    margin: 20px 0;
+    position: relative;
+}
+.job-card-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+.job-card-title img {
+    width: 40%;
+    height: 127px;
+}
+.job-card-title h3 {
+    width: 50%;
+}
+.job-card-company {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+.job-card-company h3 {
+    width: 50%;
+}
+.job-card button {
+    height: 50px;
+    width: 60%;
+    border-radius: 15px;
+    border: none;
+    background-color: #1e3a8a;
+    color: #f3f4f6;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 20%;
+}
+.job-card h3 {
+    font-family: "Montserrat", sans-serif;
+}
+.job-card p {
+    font-family: "Poppins", sans-serif;
+}

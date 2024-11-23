@@ -1,0 +1,191 @@
+.job-details {
+    padding: 30px;
+    color: #1a3e8a;
+}
+.job-details-company {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.job-details-company img {
+    width: 15%;
+    min-width: 120px;
+    cursor: pointer;
+}
+.job-details-company h2 {
+    cursor: pointer;
+}
+.job-details-title {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.job-details-location {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.apply-button {
+    height: 50px;
+    width: 20%;
+    min-width: 100px;
+    border-radius: 15px;
+    border: none;
+    background-color: #1e3a8a;
+    color: #f3f4f6;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+@media (max-width: 650px) {
+    .job-details h2 {
+        font-size: 18px;
+    }
+    .job-details h3 {
+        font-size: 15px;
+    }
+    .job-details p,
+    .job-details li {
+        font-size: 13px;
+    }
+    .job-details-location {
+        width: 100%;
+    }
+}
+@media (max-width: 460px) {
+    .job-details h2 {
+        font-size: 15px;
+    }
+    .job-details h3 {
+        font-size: 13px;
+    }
+    .job-details p,
+    .job-details li {
+        font-size: 10px;
+    }
+    .job-details-title {
+        width: 80%;
+    }
+    .dialog-box {
+        width: 95%;
+        font-size: 0.9em;
+    }
+}
+
+/* Dialog Overlay */
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 58, 138, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden; /* Hidden by default */
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+/* Dialog Box */
+.dialog-box {
+    background-color: #f3f4f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    transform: scale(0.9); /* Start smaller */
+    opacity: 0; /* Start invisible */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Dialog Visible State */
+.dialog-overlay.showDialog {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dialog-overlay.showDialog .dialog-box {
+    transform: scale(1); /* Smooth scaling */
+    opacity: 1; /* Fully visible */
+}
+
+/* Dialog Header */
+.dialog-box h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #1a3e8a;
+}
+
+/* Dialog Text */
+.dialog-box p {
+    font-size: 1em;
+    margin: 0 0 20px;
+    color: #1a3e8a;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.dialog-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.dialog-buttons .btn-confirm,
+.dialog-buttons .btn-cancel {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dialog-buttons .btn-confirm {
+    background-color: #1e3a8a;
+    color: #f3f4f6;
+}
+
+.dialog-buttons .btn-confirm:hover {
+    background-color: #163172;
+}
+
+.dialog-buttons .btn-cancel {
+    background-color: #d1d5db;
+    color: #1a3e8a;
+}
+
+.dialog-buttons .btn-cancel:hover {
+    background-color: #e41e2d;
+}
+.toast-notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1e3a8a; /* Primary blue */
+    color: #f3f4f6; /* Light text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+    z-index: 1000;
+}
+
+.toast-notification.showDialog {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out, visibility 0s;
+}
+.delete-btn:hover {
+    background-color: #e41e2d;
+}

@@ -1,0 +1,149 @@
+.main {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    background-color: #1e3a8a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.main-right {
+    width: 50%;
+}
+.main-right img {
+    width: 90%;
+    min-width: 360px;
+    animation-name: leFadeInRight;
+    animation-duration: 2s;
+}
+
+@keyframes leFadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(160px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+.main-left {
+    width: 40%;
+    animation-name: leFadeInLeft;
+    animation-duration: 2s;
+}
+@keyframes leFadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-160px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+.main-left h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    color: #f3f4f6;
+}
+.main-left p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #f3f4f6;
+}
+.main-left button {
+    height: 50px;
+    border-radius: 15px;
+    border: 3px solid #10b981;
+    background-color: #14b8a6;
+    color: #1e3a8a;
+    font-family: "Poppins", sans-serif;
+}
+.main-left button:hover {
+    background-color: #10b981;
+}
+.section-header {
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    color: #1e3a8a;
+    text-align: center;
+}
+.categories-carousel {
+    position: relative;
+    width: 90%;
+    padding: 0 5%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.categories {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 5%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scroll-btn,
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1e3a8a;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 50px;
+}
+.scroll-btn.left {
+    left: 0;
+}
+
+.scroll-btn.right {
+    right: 0;
+}
+.custom-carousel {
+    width: 60%;
+    min-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+@media (max-width: 500px) {
+    .custom-carousel {
+        min-width: 280px;
+    }
+}
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
+
+@media (max-width: 700px) {
+    .main {
+        flex-direction: column;
+    }
+    .main-left,
+    .main-right {
+        width: 80%;
+    }
+    .main-left {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 700px) {
+    .main-right img {
+        min-width: 250px;
+    }
+}

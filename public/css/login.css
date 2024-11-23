@@ -1,0 +1,59 @@
+.login {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/office.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login img {
+    width: 100%;
+    height: 90vh;
+}
+.login-form {
+    width: 350px;
+    height: 400px;
+    background-color: #f3f4f6;
+    border: 2px solid #1a3e8a;
+    border-radius: 50px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1a3e8a;
+}
+.login-form h1 {
+    font-size: 35px;
+}
+.login-form label {
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+}
+.login-form form {
+    width: 80%;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 90%;
+    height: 30px;
+    border-radius: 25px;
+    border: 2px solid #1a3e8a;
+}
+.login-form input[type="submit"] {
+    width: 75%;
+    margin-left: 10%;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #1a3e8a;
+    border: none;
+    color: #f3f4f6;
+    font-family: "Poppins", sans-serif;
+}
+@media (max-width: 400px) {
+    .login-form {
+        width: 250px;
+    }
+}
