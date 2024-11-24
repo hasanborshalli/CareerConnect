@@ -23,6 +23,7 @@
     display: flex;
     height: 150px;
     width: 80%;
+    margin-top: 20px;
     text-align: left;
 }
 .job-slide {

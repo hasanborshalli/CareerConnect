@@ -24,7 +24,7 @@
         <tbody>
             @foreach ($applications as $application)
             <tr>
-                <td data-label="No.">1</td>
+                <td data-label="No.">{{$loop->iteration}}</td>
                 <td data-label="Applicant Name"><a href="/user/{{$application->user_id}}">{{$application->user->seeker->fname}} {{$application->user->seeker->lname}}</a></td>
                 <td data-label="Applicant Title">{{$application->user->seeker->workTitle}}</td>
                 <td data-label="Resume"><a href="/storage/seekers_resumes/{{$application->user->seeker->resume}}" download target="_blank">Download Resume</a></td>
